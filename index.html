@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Julian Shah</title>
+    <style>
+        body {
+            font-family: Lato, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 24px;
+            line-height: 1.6;
+            color: #222;
+            background: #fffedb;
+        }
+
+
+        .navbar {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 32px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 12px;
+        }
+
+        .navbar a {
+            display: inline-block;
+            padding: 8px 16px;
+            text-decoration: none;
+            color: #222;
+            background: #f2f2f2;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-family: Lato, sans-serif;
+            font-size: 0.95rem;
+        }
+
+        .navbar a:hover {
+            background: #e5e5e5;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .intro {
+            flex: 1;
+        }
+
+        h1 {
+            margin: 0 0 24px 0;
+            font-size: 2.5rem;
+            font-weight: normal;
+        }
+
+        .photo {
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 4px;
+        }
+
+        p {
+            font-size: 1.05rem;
+            margin: 0;
+        }
+
+        @media (max-width: 600px) {
+    
+        .navbar {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 32px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 12px;
+        }
+
+        .navbar a {
+            display: inline-block;
+            padding: 8px 16px;
+            text-decoration: none;
+            color: #222;
+            background: #f2f2f2;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-family: Arial, sans-serif;
+            font-size: 0.95rem;
+        }
+
+        .navbar a:hover {
+            background: #e5e5e5;
+        }
+
+        header {
+                flex-direction: column-reverse;
+            }
+
+            .photo {
+                width: 140px;
+                height: 140px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+        <nav class="navbar" aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="research.html">Research</a>
+            <a href="#">Funny</a>
+        </nav>
+
+    <header>
+        <div class="intro">
+            <h1>Julian Shah</h1>
+
+            <p>
+                Hello! I am a graduate student at the University of Chicago.
+		My main interests are in algebraic number theory and algebraic geometry.
+		<br><br>
+		Please contact me at [first name] [last initial] at uchicago dot edu.
+		You can find my CV <a href="cv.pdf">here</a>.
+            </p>
+        </div>
+
+        <!-- Replace image.jpg with your photo, or simply place your photo in this folder
+             and name it image.jpg. -->
+        <img class="photo" src="image.jpg" alt="Photo of Julian Shah">
+    </header>
+</body>
+</html>
